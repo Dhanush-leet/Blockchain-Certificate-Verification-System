@@ -147,14 +147,10 @@ Once a certificate is stored on the blockchain, it becomes permanently verifiabl
 
 Users can start the system using:
 
-```
-INITIATE_SYSTEM
 
-<img width="1919" height="979" alt="Screenshot 2026-03-04 154742" src="https://github.com/user-attachments/assets/c64428e2-8590-4495-a088-d03fc6cb0ce5" />
+<img width="1919" height="979" alt="Screenshot 2026-03-04 154742" src="https://github.com/user-attachments/assets/c0ef80f2-9528-4cc9-8729-15f2bcfa38a7" />
 
-```
 ---
-
 # 📦 Certificate Storage Module
 
 This module allows institutions to store certificate hashes on blockchain.
