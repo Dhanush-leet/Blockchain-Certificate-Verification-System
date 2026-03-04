@@ -1,0 +1,3 @@
+com\certificate\verification\repository\CertificateRepository.class
+com\certificate\verification\VerificationApplication.class
+com\certificate\verification\model\Certificate.class

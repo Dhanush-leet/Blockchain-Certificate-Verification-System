@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Share+Tech+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white min-h-screen font-sans antialiased;
+    background-image: radial-gradient(circle, #333 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight uppercase;
+  }
+
+  .font-mono {
+    font-family: 'Share Tech Mono', monospace;
+  }
+}
+
+@layer components {
+  .nothing-card {
+    @apply bg-zinc-950/80 backdrop-blur-xl border border-zinc-800/50 rounded-[2.5rem] p-8 shadow-2xl;
+  }
+
+  .nothing-input {
+    @apply w-full bg-zinc-900/50 border border-zinc-800 rounded-2xl px-6 py-4 outline-none transition-all duration-300 font-mono text-sm placeholder:text-zinc-600;
+  }
+
+  .nothing-input:focus {
+    @apply border-zinc-600 ring-4 ring-white/5;
+  }
+
+  .nothing-btn-primary {
+    @apply bg-white text-black px-8 py-4 rounded-full font-bold uppercase tracking-wider transition-all duration-300 active:scale-95 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-zinc-200;
+  }
+
+  .nothing-btn-accent {
+    @apply bg-[#D71920] text-white px-8 py-4 rounded-full font-bold uppercase tracking-wider transition-all duration-300 active:scale-95 disabled:opacity-30;
+  }
+
+  .nothing-badge {
+    @apply bg-zinc-900 border border-zinc-800 text-zinc-400 px-4 py-1 rounded-full text-[10px] font-mono uppercase tracking-widest;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-800 rounded-full hover:bg-zinc-700;
+}
+
+/* Animations */
+@keyframes dot-pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.animate-dot {
+  animation: dot-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
