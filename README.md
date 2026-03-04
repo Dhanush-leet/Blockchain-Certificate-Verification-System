@@ -63,6 +63,7 @@ The system is designed to be:
 
 # 📂 Project Structure
 
+```
 blockchain-certificate-verification/
 │
 ├── frontend/
@@ -71,6 +72,7 @@ blockchain-certificate-verification/
 │   │   ├── pages/
 │   │   ├── services/
 │   │   └── assets/
+│   │
 │   ├── public/
 │   ├── package.json
 │   └── vite.config.js
@@ -78,14 +80,14 @@ blockchain-certificate-verification/
 ├── backend/
 │   ├── src/main/java/
 │   ├── src/main/resources/
-│   ├── pom.xml
+│   └── pom.xml
 │
 ├── blockchain/
 │   └── contracts/
 │       └── CertificateVerification.sol
 │
 └── README.md
-
+```
 ---
 
 # ✨ Key Features
